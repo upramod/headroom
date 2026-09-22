@@ -748,10 +748,7 @@ mod tests {
             original_count: 4,
         };
         let out = CsvSchemaFormatter::new().format(&c);
-        assert_eq!(
-            out,
-            "[4]{label:string?}\n\nnull\n\"\"\n\"null\"\n"
-        );
+        assert_eq!(out, "[4]{label:string?}\n\nnull\n\"\"\n\"null\"\n");
     }
 
     #[test]
